@@ -12,6 +12,7 @@
         "debug-build-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && ./gradlew app:assembleDebug"
     },
     "dependencies": {
+        "@xstate/react": "^3.2.2",
         "axios": "^1.6.0",
         "moment": "^2.29.4",
         "react": "18.2.0",

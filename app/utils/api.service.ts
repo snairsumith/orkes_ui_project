@@ -10,7 +10,7 @@ interface ApiResponse {
 }
 
 export async function axiosGet(endPoint: string): Promise<ApiResponse> {
-  let header: {[key: string]: string} = {
+  const header: {[key: string]: string} = {
     'Content-Type': 'application/json',
   };
 

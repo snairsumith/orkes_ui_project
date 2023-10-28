@@ -53,8 +53,8 @@ export const userListMachines = Machine<ApiMachineContext, ApiMachineEvent>({
   services: {
     fetchData: async (context) => {
       try {
-        const response = await axiosGet(`photo-gallery-feed-page/page/${context.page}`); // Replace with actual user ID
-        return response?.response?.data;
+        const response = await axiosGet(`photo-gallery-feed-page/page/${context.page}`);
+        return response?.response?.data?.nodes;
       } catch (error) {
         throw error;
       }

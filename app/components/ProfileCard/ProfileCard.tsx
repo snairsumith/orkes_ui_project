@@ -1,4 +1,4 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text} from 'react-native';
 import React, {useState} from 'react';
 import {profileStyle} from './ProfileCard.style';
 import moment from 'moment';
@@ -25,7 +25,7 @@ const ProfileCard: React.FC<Props> = ({data}) => {
         onError={onImageError}
         style={profileStyle.profileImage}
         resizeMode={FastImage.resizeMode.cover}
-        /* Default image not working in the debug mode .Check out this link https://www.npmjs.com/package/react-native-fast-image#defaultsource-number  . Thats why i am handling my own method */
+        /* Default image not working in the debug mode .Check out this link https://www.npmjs.com/package/react-native-fast-image#defaultsource-number  . */
         defaultSource={images.placeHolderImg}
       />
       <View style={profileStyle.contentContainer}>
